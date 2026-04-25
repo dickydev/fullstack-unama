@@ -1,0 +1,17 @@
+span {
+  background-color: red;
+  display: inline-block;
+  height: 100px;
+}
+
+p {
+  background-color: yellow;
+  height: 100px;
+}
+
+/* 
+    Display : 
+    1. Inline : Secara Horizontal
+    2. Block : Secara Vertikal
+    3. Inline-Block : Secara Horizontal namun memiliki sifat Vertikal
+*/

@@ -1,0 +1,51 @@
+/* CSS RESET : Start Project */
+* {
+  box-sizing: border-box; /* width : 100px */
+  padding: 0;
+  margin: 0;
+}
+
+/* Selector : Cara CSS Memanggil Elemen HTML 
+    -. tag html
+    -. class (.)
+    -. id (#)
+    -. combinasi
+*/
+.kotak {
+  width: 1024px;
+  height: 100px;
+  background-color: red;
+}
+
+/* BOX MODEL */
+/* 1. Margin : jarak di luar konten */
+/* 2. Border : garis tepi konten */
+/* 3. Padding : jarak di dalam konten */
+/* 4. Konten */
+
+/* 1. MARGIN */
+.kotak {
+  margin-top: 100px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  margin-left: 150px;
+}
+
+/* 2. BORDER */
+/* 
+    selector{
+        border: tebal tipe warna;
+    }
+*/
+.kotak {
+  border: 10px solid black;
+}
+
+/* 3. PADDING */
+.kotak {
+  /* padding: 20px; */
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+}

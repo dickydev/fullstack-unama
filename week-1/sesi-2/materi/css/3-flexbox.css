@@ -1,0 +1,33 @@
+.items {
+  width: 100px;
+  height: 100px;
+}
+.merah {
+  background-color: red;
+}
+.hijau {
+  background-color: green;
+}
+.biru {
+  background-color: blue;
+}
+
+/* notes : tag div secara default adalah display block (vertikal) */
+
+/* 1. FLEX CONTAINER */
+/* 
+    Notes : Flexbox tidak ada inline dan block,
+    yang ada secara row (main axis) atau column (cross axis)
+*/
+.container {
+  height: 100dvh; /* Notes : Untuk Menggunakan Cross Axis, Harus Mendefinisikan tinggi Container (Parent) */
+  display: flex;
+  /* 1. FLEX DIRECTION : Untuk mengatur arah dari items */
+  flex-direction: row;
+  /* 2. FLEX WRAP : Untuk Mengatur Bungkusan */
+  flex-wrap: wrap;
+  /* 3. JUSTIFY CONTENT : Untuk Mengatur Align secara Main Axis (Horizontal) */
+  justify-content: center;
+  /* 4. ALIGN ITEMS : Untuk Mengatur Align secara Cross Axis (Vertikal) */
+  align-items: center;
+}
