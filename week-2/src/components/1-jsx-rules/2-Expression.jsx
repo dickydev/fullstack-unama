@@ -4,9 +4,9 @@ const ExpressionComponent = () => {
     <div>
       <h1>Materi 2 - Expression</h1>
       {1 + 1}
-      {name}
+      {/* {name}
       {true}
-      {Array.map()}
+      {array.map()} */}
     </div>
   );
 };

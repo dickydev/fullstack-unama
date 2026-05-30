@@ -4,10 +4,11 @@ import {
   UserList,
   ConditionalRendering,
 } from './components/1-jsx-rules';
+import { Counter, Profile } from './components/2-state';
 
 const App = () => {
   return (
-    <div>
+    <div style={{ height: '200dvh' }}>
       <h1>Belajar React</h1>
 
       {/* Materi 1 - JSX Rules */}
@@ -15,6 +16,10 @@ const App = () => {
       <ExpressionComponent />
       <UserList />
       <ConditionalRendering />
+
+      {/* Materi 2 - State */}
+      <Counter />
+      <Profile />
     </div>
   );
 };
