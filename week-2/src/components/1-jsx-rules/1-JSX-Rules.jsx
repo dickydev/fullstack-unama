@@ -9,7 +9,7 @@ const JSXRules = () => {
   return <h1 className="judul">Materi 1 - JSX Rules {1 + 1}</h1>;
 
   // 3. Gunakan {} untuk JavaScript
-  const name = 'Ucup';
+  const name = "Ucup";
   return <p>Hello, {name}</p>;
 
   // 4. Self-closing tag (</>)
