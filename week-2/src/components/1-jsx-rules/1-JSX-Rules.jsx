@@ -1,4 +1,8 @@
+import { useContext } from 'react';
+import { ThemeContext } from '../7-context/context/ThemeContext';
+
 const JSXRules = () => {
+  const { theme } = useContext(ThemeContext);
   // 1. Return harus 1 Parent Element
   //   return (
   //       <h1>Materi 1 - JSX Rules</h1>
@@ -6,10 +10,14 @@ const JSXRules = () => {
   //   );
 
   // 2. class → className
-  return <h1 className="judul">Materi 1 - JSX Rules {1 + 1}</h1>;
+  return (
+    <h1 className="judul">
+      Materi 1 - JSX Rules {1 + 1} : {theme}
+    </h1>
+  );
 
   // 3. Gunakan {} untuk JavaScript
-  const name = "Ucup";
+  const name = 'Ucup';
   return <p>Hello, {name}</p>;
 
   // 4. Self-closing tag (</>)

@@ -32,7 +32,7 @@ const ConditionalRendering = () => {
   }, []);
 
   // 3. If Rendering
-  if (isLoading) return <span class="loader"></span>;
+  if (isLoading) return <span className="loader"></span>;
 
   return (
     <div>
