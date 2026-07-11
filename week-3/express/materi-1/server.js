@@ -77,9 +77,28 @@ app.get('/books', (req, res) => {
   });
 });
 
-app.get("/books/:id", (req, res) => {
-  
-})
+app.get('/books/:id', (req, res) => {
+  const id = Number(req.params.id);
+
+  if (!Number.isInteger(id)) {
+    return res.status(400).json({
+      message: 'book ID Must be a number',
+    });
+  }
+
+  const book = books.find((book) => book.id === id);
+
+  if (!book) {
+    return res.status(404).json({
+      message: 'Book not found',
+    });
+  }
+
+  res.status(200).json({
+    message: `Success get book id : ${id}`,
+    data: book,
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`Server berjalan di http://localhost:${PORT}`);
